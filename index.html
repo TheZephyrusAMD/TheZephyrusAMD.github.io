@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pradyun Sunilkumar | Student Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    /* ================= GLOBAL STYLES ================= */
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f6f8;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    /* ================= PROFILE TOP ================= */
+    .profile-top {
+        display: flex;
+        align-items: center;
+        background-color: #0a66c2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        color: white;
+        flex-wrap: wrap; /* responsive for small screens */
+    }
+
+    .profile-top img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    .profile-info h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .profile-info p {
+        margin-top: 8px;
+        font-size: 16px;
+        color: #e6f0fa;
+    }
+
+    /* ================= SECTION CARDS ================= */
+    section {
+        background-color: #fff;
+        padding: 25px 20px;
+        margin-top: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 22px;
+        color: #0a66c2;
+        border-bottom: 2px solid #0a66c2;
+        display: inline-block;
+        padding-bottom: 4px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    /* ================= ACHIEVEMENTS ================= */
+    ul.achievements {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ul.achievements li {
+        background-color: #eaf3fc;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        border-left: 5px solid #0a66c2;
+        border-radius: 6px;
+        transition: background-color 0.2s ease;
+    }
+
+    ul.achievements li:hover {
+        background-color: #d6e9fc;
+    }
+
+    /* ================= SKILLS TAGS ================= */
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skills span {
+        background-color: #f0f4f8;
+        color: #0a66c2;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .skills span:hover {
+        background-color: #e1efff;
+        transform: translateY(-2px);
+    }
+
+    /* ================= ACADEMIC PERFORMANCE ================= */
+    .academics {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .academics .subject {
+        display: flex;
+        justify-content: space-between;
+        background-color: #eaf3fc;
+        padding: 10px 15px;
+        border-radius: 6px;
+        border-left: 5px solid #0a66c2;
+        transition: background-color 0.2s ease;
+    }
+
+    .academics .subject:hover {
+        background-color: #d6e9fc;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+        margin-top: 30px;
+    }
+
+    /* ================= RESPONSIVE DESIGN ================= */
+    @media (max-width: 600px) {
+        .profile-top {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-top img {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        .academics .subject {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ================= PROFILE TOP ================= -->
+    <div class="profile-top">
+        <div class="profile-info">
+            <h1>Pradyun Sunilkumar</h1>
+            <p>Student | Aspiring Developer | Creative Thinker</p>
+        </div>
+    </div>
+
+    <!-- ================= ABOUT ME ================= -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a motivated student with a strong interest in technology, creativity, 
+            and problem-solving. I enjoy learning how things work, especially in the 
+            areas of coding, design, and logical thinking. I like working on projects 
+            that challenge me and help me improve my skills.
+        </p>
+    </section>
+
+    <!-- ================= ACADEMIC PERFORMANCE ================= -->
+    <section>
+        <h2>Academic Performance</h2>
+        <p><strong>Average Grade: A</strong></p>
+        <div class="academics">
+            <div class="subject">
+                <span>Accounting</span>
+                <span>A*</span>
+            </div>
+            <div class="subject">
+                <span>Business Studies</span>
+                <span>A</span>
+            </div>
+            <div class="subject">
+                <span>Physics</span>
+                <span>B</span>
+            </div>
+            <div class="subject">
+                <span>Computer Science</span>
+                <span>B</span>
+            </div>
+            <div class="subject">
+                <span>Mathematics</span>
+                <span>B</span>
+            </div>
+            <div class="subject">
+                <span>Economics</span>
+                <span>B</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section>
+        <h2>Achievements</h2>
+        <ul class="achievements">
+            <li>🏆 <strong>Battle of Code – First Place:</strong> Won first place across my grade by creating a supermarket website using code.</li>
+            <li>🎭 <strong>Trinity College London Certification:</strong> Certified in Drama.</li>
+            <li>🏅 <strong>Best Actor Award:</strong> Received the Best Act award at a Literature Festival.</li>
+        </ul>
+    </section>
+
+    <!-- ================= SKILLS & INTERESTS ================= -->
+    <section>
+        <h2>Skills & Interests</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>Web Development</span>
+            <span>Problem Solving</span>
+            <span>Logical Thinking</span>
+            <span>Creative Thinking</span>
+            <span>Gaming</span>
+            <span>Football</span>
+            <span>Chess</span>
+            <span>Board Games</span>
+            <span>Business/Monopoly</span>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+       2026 Pradyun Sunilkumar | Student Profile
+    </footer>
+
+</div>
+
+</body>
+</html>
